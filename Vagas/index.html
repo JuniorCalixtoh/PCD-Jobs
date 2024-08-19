@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>Título da página</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <div class="flex-container">
+        <div class="container">
+            <h2 class="fonte-filtro">Filtros</h2>
+            <!-- Filtro de Localização -->
+            <label for="localizacao" class="barra_filtro">Cidade, Estado ou Região:</label>
+            <select class="filtro" id="cidadeSelect">
+                <option value=""></option>
+                <option value="Amazonas">Amazonas</option>
+                <option value="Acre">Acre</option>
+                <option value="Belo Horizonte">Belo Horizonte</option>
+                <option value="Franca">Franca</option>
+                <option value="São Paulo">São Paulo</option>
+                <option value="Teresina">Teresina</option>
+            </select>
+            <!-- Fim Filtro de Localização -->
+
+            <!-- Filtro de Deficiência -->
+            <label for="tipo-de-deficiencia" class="barra_filtro">Tipo de deficiência:</label>
+            <select class="filtro" id="deficienciaSelect">
+            <option value=""></option>
+            <option value="Qualquer deficiência">Qualquer Deficiência</option>
+            <option value="Visual">Visual</option>
+            <option value="Motora">Motora</option>
+            <option value="Mental">Mental</option>
+            <option value="Intelectual">Intelectual</option>
+            <option value="Auditivo">Auditivo</option>
+            <option value="Física">Física</option>
+            <option value="Múltipla">Múltipla</option>  
+            </select>
+            <!-- Fim Filtro de Deficiência -->
+
+            <!-- Filtro de Área de Atuação -->
+            <label for="area-de-atuacao" class="barra_filtro">Área de atuação:</label>
+            <select class="filtro" id="areaSelect">
+                <option value=""></option>
+                <option value="Pesquisa e Desenvolvimento">Pesquisa e Desenvolvimento</option>
+                <option value="Marketing e Comunicação">Marketing e Comunicação</option>
+                <option value="Tecnologia da Informação">Tecnologia da Informação</option>
+                <option value="Mobilidade e Automação">Mobilidade e Automação</option>
+                <option value="Sustentabilidade Ambiental">Sustentabilidade Ambiental</option>
+            </select>
+            <!-- Fim Filtro de Área de Atuação -->
+
+            <!-- Filtro de Tipo de Vaga -->
+            <label for="tipo-de-vaga" class="barra_filtro">Tipo de vaga:</label>
+            <select class="filtro" id="vagaSelect">
+                <option value=""></option>
+                <option value="Tempo integral">Tempo integral</option>
+                <option value="Meio período">Meio período</option>
+                <option value="Contrato">Contrato</option>
+                <option value="Temporário">Temporário</option>
+                <option value="Estágio">Estágio</option>
+            </select>
+            <!-- Fim Filtro de Tipo de Vaga -->
+
+            <!-- Filtro de Presencial ou Remota -->
+            <label for="presencial/remota" class="barra_filtro">Presencial / Remota</label>
+            <select class="filtro" id="modoSelect">
+                <option value=""></option>
+                <option value="Presencial">Presencial</option>
+                <option value="Remoto">Remoto</option>
+                <option value="Híbrido">Híbrido</option>
+            </select>
+            <!-- Fim Filtro de Presencial ou Remota -->
+        </div>
+
+        <div class="content">
+            
+            <div class="empresa" id="empresa1">
+                <span class="star-icon">
+                    <a class="favoritar" href="#"><i class="bi bi-star-half"></i></a>
+                </span>
+                <img class="imagem" src="https://t4.ftcdn.net/jpg/01/41/83/41/360_F_141834124_G94EL0HiEzF26tN19ZlpASDH2lkWlDHr.jpg" width="100" height="100">
+                <a href="#">
+                    <h2>BioTech Labs</h2>
+                </a>
+                <div class="vaga">
+                    <a href="#">
+                        <h3 class="area">Pesquisa e Desenvolvimento</h3>
+                    </a>
+                    <p>BioTech Labs procura profissionais PCD com deficiência auditiva para nossa equipe de pesquisa e
+                        desenvolvimento em biotecnologia.</p>
+                    <div class="simbolos">
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="cidade">Amazonas</p>
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="modo">Presencial</p>
+                        <div class="simbolo">
+                            <i class="bi bi-suitcase-lg-fill"></i>
+                        </div>
+                        <p class="tipo-de-vaga">Contrato</p>
+                        <div class="simbolo">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <p>2144 R$</p>
+                        <div class="simbolo">
+                            <i class="bi bi-person-wheelchair"></i>
+                        </div>
+                        <p class="deficiencia">Auditivo</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa" id="empresa2">
+                <span class="star-icon">
+                    <a class="favoritar" href="#"><i class="bi bi-star-half"></i></a>
+
+                </span>
+                <img class="imagem" src="https://cdn.imp-multimedia.com/br/lCweXFRjfPnG.jpg " width="100" height="100">
+                <a href="#">
+                    <h2>BlueSky Consultoria de TI</h2>
+                </a>
+                <div class="vaga">
+                    <a href="#">
+                        <h3 class="area">Tecnologia da Informação</h3>
+                    </a>
+                    <p>BlueSky busca talentos PCD com deficiência mental e auditiva na área de tecnologia da informação,
+                        incluindo programação, segurança cibernética e análise de dados.</p>
+                    <div class="simbolos">
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="cidade">Acre</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="modo">Presencial</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-suitcase-lg-fill"></i>
+                        </div>
+                        <p class="tipo-de-vaga">Tempo Integral</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <p>1375 R$</p>
+                        <div class="simbolo">
+                            <i class="bi bi-person-wheelchair"></i>
+                        </div>
+                        <p class="deficiencia">Múltipla</p><p class="deficiencia"> 
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa" id="empresa3">
+                <span class="star-icon">
+                    <a class="favoritar" href="#"><i class="bi bi-star-half"></i></a>
+
+                </span>
+                <img class="imagem" src="https://d1yjjnpx0p53s8.cloudfront.net/styles/logo-thumbnail/s3/052019/ets.jpg?vwUdGr3Igq63.r6NTj1VmNSZ0r_aU9hm&itok=xSqvkVNe" width="100" height="100">
+                <a href="#">
+                    <h2>ETechNova Soluções</h2>
+                </a>
+                <div class="vaga">
+                    <a href="#">
+                        <h3 class="area">Sustentabilidade Ambiental</h3>
+                    </a>
+                    <p>EcoTechNova está interessada em profissionais PCD com deficiência mental, que compartilhem nosso compromisso com soluções de sustentabilidade ambiental.</p>
+                    <div class="simbolos">
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="cidade">Belo Horizonte</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="modo">Híbrido</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-suitcase-lg-fill"></i>
+                        </div>
+                        <p class="tipo-de-vaga">Meio período</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <p>1700 R$</p>
+                        <div class="simbolo">
+                            <i class="bi bi-person-wheelchair"></i>
+                        </div>
+                        <p class="deficiencia">Mental</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa" id="empresa4">
+                <span class="star-icon">
+                    <a class="favoritar" href="#"><i class="bi bi-star-half"></i></a>
+
+                </span>
+                <img class="imagem" src="https://t3.ftcdn.net/jpg/05/06/54/84/360_F_506548413_6RN1QnCn7Vc6SCkir2Yqe5qVhffpvnZi.jpg" width="100" height="100">
+                <a href="#">
+                    <h2>SwiftGear Tecnologia</h2>
+                </a>
+                <div class="vaga">
+                    <a href="#">
+                        <h3 class="area">Mobilidade e Automação</h3>
+                    </a>
+                    <p>SwiftGear está contratando profissionais PCD com deficiência motora para nossa equipe de
+                        engenharia e produção no setor de mobilidade e automação.</p>
+                    <div class="simbolos">
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="cidade">Franca</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="modo">Presencial</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-suitcase-lg-fill"></i>
+                        </div>
+                        <p class="tipo-de-vaga">Contrato</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <p>1900 R$</p>
+                        <div class="simbolo">
+                            <i class="bi bi-person-wheelchair"></i>
+                        </div>
+                        <p class="deficiencia">Motora</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa" id="empresa5">
+                <span class="star-icon">
+                    <a class="favoritar" href="#"><i class="bi bi-star-half"></i></a>
+
+                </span>
+                <img class="imagem" src="https://i.pinimg.com/474x/8b/0d/c3/8b0dc32db5268368f896024ebf74072d.jpg" width="100" height="100">
+                <a href="#">
+                    <h2>TechPulse Soluções em TI</h2>
+                </a>
+                <div class="vaga">
+                    <a href="#">
+                        <h3 class="area">Tecnologia da Informação</h3>
+                    </a>
+                    <p>TechPulse procura profissionais PCD, com deficiencia física, com experiência em
+                        desenvolvimento de software e suporte técnico para fortalecer nossa equipe de TI.</p>
+                    <div class="simbolos">
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="cidade">São Paulo</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="modo">Remoto</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-suitcase-lg-fill"></i>
+                        </div>
+                        <p class="tipo-de-vaga">Temporário</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <p>2300 R$</p>
+                        <div class="simbolo">
+                            <i class="bi bi-person-wheelchair"></i>
+                        </div>
+                        <p class="deficiencia">Física</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="empresa" id="empresa6">
+                <span class="star-icon">
+                    <a class="favoritar" href="#"><i class="bi bi-star-half"></i></a>
+
+                </span>
+                <img class="imagem" src="https://seeklogo.com/images/M/mmm-logo-F37055A107-seeklogo.com.png" width="100" height="100">
+                <a href="#">
+                    <h2>MarketMovers Marketing</h2>
+                </a>
+                <div class="vaga">
+                    <a href="#">
+                        <h3 class="area">Marketing e Comunicação</h3>
+                    </a>
+                    <p>MarketMovers busca talentos PCD com deficiência intelectual, física ou de qualquer tipo, com
+                        expertise em estratégias de marketing, publicidade e relações públicas para integrar nossa
+                        equipe de marketing criativo.</p>
+                    <div class="simbolos">
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="cidade">Teresina</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-geo-alt-fill"></i>
+                        </div>
+                        <p class="modo">Presencial</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-suitcase-lg-fill"></i>
+                        </div>
+                        <p class="tipo-de-vaga">Estágio</p>
+
+                        <div class="simbolo">
+                            <i class="bi bi-cash-coin"></i>
+                        </div>
+                        <p>A combinar</p>
+                        <div class="simbolo">
+                            <i class="bi bi-person-wheelchair"></i>
+                        </div>
+                        <p class="deficiencia">Qualquer deficiência</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    <!--<div class="pagination">
+        <button id="prevPage">Página Anterior</button>
+        <button id="nextPage">Próxima Página</button>
+   </div> !-->
+        
+        
+
+</body>
+
+</html>
