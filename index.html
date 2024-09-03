@@ -39,154 +39,227 @@
     </div>
 </div>
   
-<div class="bg-primary box-access-univ d-flex justify-content-center no-contrast ">
-    <button class="btn d-flex justify-content-center align-items-center no-contrast" aria-label="Abrir menu de Acessibilidade"
-            data-bs-toggle="offcanvas" data-bs-target="#offcanvas-access" aria-controls="offcanvas-access">
+<!-- Container principal para o botão de acessibilidade -->
+<div class="bg-primary box-access-univ d-flex justify-content-center no-contrast">
+    <!-- Botão que abre o menu de acessibilidade quando clicado -->
+    <button class="btn d-flex justify-content-center align-items-center no-contrast"
+            aria-label="Abrir menu de Acessibilidade"  
+            data-bs-toggle="offcanvas"  
+            data-bs-target="#offcanvas-access"  
+            aria-controls="offcanvas-access"> 
+        <!-- Ícone representando acessibilidade -->
         <i class="fas fa-universal-access fa-2x no-hover rounded-5 fas-access-pcd text-black no-contrast"></i>
     </button>
 </div>
-<div class="offcanvas offcanvas-end rounded-3" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="offcanvas-access" aria-labelledby="offcanvas-access-title">
+
+<!-- Menu offcanvas de acessibilidade que aparece do lado direito -->
+<div class="offcanvas offcanvas-end rounded-3"
+     data-bs-scroll="true"  
+     data-bs-backdrop="true"  
+     tabindex="-1"  
+     id="offcanvas-access" 
+     aria-labelledby="offcanvas-access-title">  
+    <!-- Cabeçalho do menu offcanvas -->
     <div class="offcanvas-header bg-primary rounded-3">
+        <!-- Título do menu de acessibilidade -->
         <label class="offcanvas-title fs-3" id="offcanvas-access-title">Recursos de acessibilidade</label>
-        <button type="button" class="btn-close no-contrast" data-bs-dismiss="offcanvas" aria-label="Fechar menu de Acessibilidade"></button>
+        <!-- Botão para fechar o menu offcanvas -->
+        <button type="button" class="btn-close no-contrast" data-bs-dismiss="offcanvas"
+                aria-label="Fechar menu de Acessibilidade"></button>
     </div>
+    <!-- Corpo do menu offcanvas com as opções de acessibilidade -->
     <div class="offcanvas-body small">
+        <!-- Lista de opções de acessibilidade -->
         <div class="list-group list-group-flush bg-light">
-            <a href="#main" class="list-group-item list-group-item-action p-3 fs-4" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            <!-- Link para ir diretamente à seção principal -->
+            <a href="#main" class="list-group-item list-group-item-action p-3 fs-4"
+               data-bs-toggle="tooltip" data-bs-placement="bottom"
                title="(Alt + 1) Ir para seção principal"><i class="fas fa-keyboard"></i> (Alt + 1) Vá direto para a seção principal</a>
-            <button class="list-group-item list-group-item-action p-3 fs-4" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            <!-- Botão para abrir o menu offcanvas -->
+            <button class="list-group-item list-group-item-action p-3 fs-4" tabindex="0"
+                    data-bs-toggle="tooltip" data-bs-placement="bottom"
                     title="(Alt + 2) Abrir o menu" onclick="openOffcanvasMenu()"><i class="fas fa-keyboard"></i> (Alt + 2) Para abrir o menu</button>
-            <a href="#header" class="list-group-item list-group-item-action p-3 fs-4" rel="nofollow" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            <!-- Link para voltar ao início da página -->
+            <a href="#header" class="list-group-item list-group-item-action p-3 fs-4" rel="nofollow" tabindex="0"
+               data-bs-toggle="tooltip" data-bs-placement="bottom"
                title="(Alt + 3) Volte para o início"><i class="fas fa-keyboard"></i> (Alt + 3) Volte para o início</a>
-            <a href="#footer" class="list-group-item list-group-item-action p-3 fs-4" rel="nofollow" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            <!-- Link para ir ao rodapé da página -->
+            <a href="#footer" class="list-group-item list-group-item-action p-3 fs-4" rel="nofollow" tabindex="0"
+               data-bs-toggle="tooltip" data-bs-placement="bottom"
                title="(Alt + 4) Ir para rodapé"><i class="fas fa-keyboard"></i> (Alt + 4) Ir para o rodapé</a>
-            <a href="/vagas-para-pcd" class="list-group-item list-group-item-action p-3 fs-4" rel="nofollow" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            <!-- Link para buscar vagas -->
+            <a href="/vagas-para-pcd" class="list-group-item list-group-item-action p-3 fs-4" rel="nofollow" tabindex="0"
+               data-bs-toggle="tooltip" data-bs-placement="bottom"
                title="(Alt + 5) Buscar Vagas"><i class="fas fa-keyboard"></i> (Alt + 5) Pesquise Vagas</a>
-            <p class="list-group-item list-group-item-action p-3 fs-4" tabindex="0"><i class="fas fa-font"></i>+  Aumentar Fonte: utilize o atalho Ctrl + no seu teclado</p>
-            <p class="list-group-item list-group-item-action p-3 fs-4" tabindex="0"><i class="fas fa-font"></i>- Diminuir Fonte: utilize o atalho Ctrl - no seu teclado</p>
-            <button class="list-group-item list-group-item-action p-3 fs-4" aria-label="Tema padrão PCD Online" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            <!-- Informação sobre como aumentar a fonte -->
+            <p class="list-group-item list-group-item-action p-3 fs-4" tabindex="0">
+                <i class="fas fa-font"></i>+  Aumentar Fonte: utilize o atalho Ctrl + no seu teclado
+            </p>
+            <!-- Informação sobre como diminuir a fonte -->
+            <p class="list-group-item list-group-item-action p-3 fs-4" tabindex="0">
+                <i class="fas fa-font"></i>- Diminuir Fonte: utilize o atalho Ctrl - no seu teclado
+            </p>
+            <!-- Botão para aplicar o tema padrão -->
+            <button class="list-group-item list-group-item-action p-3 fs-4" aria-label="Tema padrão PCD Online" tabindex="0"
+                    data-bs-toggle="tooltip" data-bs-placement="bottom"
                     title="Tema padrão PCD Online" onclick="applyContrast('contrast-default')"><i class="fas fa-circle text-primary"></i> Tema Padrão</button>
-            <button class="list-group-item list-group-item-action p-3 fs-4" aria-label="Contraste fundo preto e texto branco" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            <!-- Botão para aplicar o tema de contraste preto -->
+            <button class="list-group-item list-group-item-action p-3 fs-4" aria-label="Contraste fundo preto e texto branco" tabindex="0"
+                    data-bs-toggle="tooltip" data-bs-placement="bottom"
                     title="Contraste: fundo preto, letras brancas" onclick="applyContrast('contrast-black')"><i class="fas fa-circle"></i> Tema Contraste Preto</button>
-            <button class="list-group-item list-group-item-action p-3 fs-4" aria-label="Contraste fundo branco e texto preto" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+            <!-- Botão para aplicar o tema de contraste branco -->
+            <button class="list-group-item list-group-item-action p-3 fs-4" aria-label="Contraste fundo branco e texto preto" tabindex="0"
+                    data-bs-toggle="tooltip" data-bs-placement="bottom"
                     title="Contraste: fundo branco, letras pretas" onclick="applyContrast('contrast-white')"><i class="far fa-circle"></i> Tema Contraste Branco</button>
 
-                         <div id="contents-footer-two-tratament-no-statement" class="mic-cursors-block geral-settings-buttons-interactions">                             
-                            <div id="tpd-perto-online-dictionary-box" title="Busque por uma palavra">
-                               <span>
-                               Dicionário
-                               </span>
-                               <form id="tpd-perto-online-dictionary-form" action="https://www.dicio.com.br/pesquisa.php" method="GET" target="_blank">
-                                  <input tabindex="0" type="text" class="click-analytics-dictionary-search" id="tpd-perto-online-dictionary-search" name="q" autocomplete="on" placeholder="Busque por uma palavra">
-                               </form>
-                            </div>
-                            
-                            <div id="tpd-perto-online-dictionary-search-results-box">
-                               <ul tabindex="0" id="tpd-perto-online-dictionary-search-results">
-                               </ul>
-                            </div>
-                                       
-                               
+            <!-- Seção de dicionário -->
+            <div id="contents-footer-two-tratament-no-statement" class="mic-cursors-block geral-settings-buttons-interactions">                             
+                <div id="tpd-perto-online-dictionary-box" title="Busque por uma palavra">
+                   <span>
+                   Dicionário
+                   </span>
+                   <!-- Formulário de busca de dicionário -->
+                   <form id="tpd-perto-online-dictionary-form" action="https://www.dicio.com.br/pesquisa.php" method="GET" target="_blank">
+                      <input tabindex="0" type="text" class="click-analytics-dictionary-search" id="tpd-perto-online-dictionary-search" name="q" autocomplete="on" placeholder="Busque por uma palavra">
+                   </form>
+                </div>
+                
+                <!-- Resultados da busca do dicionário -->
+                <div id="tpd-perto-online-dictionary-search-results-box">
+                   <ul tabindex="0" id="tpd-perto-online-dictionary-search-results">
+                   </ul>
+                </div>
             </div>                              
         </div>
     </div>
-</div> <nav class="navbar navbar-expand-lg border-bottom bg-transparent"
-     aria-label="Barra de Navegação Principal">
-    <div class="container d-flex justify-content-between">
-        <a class="d-flex align-items-center" href="https://kanto.legiaodosherois.com.br/w750-h450-k1/wp-content/uploads/2022/05/legiao_ZCdS2xfPBpnA.png.webp" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
-           title="Leis, Normas, Acessibilidade e Deficiência. Descubra como o PCD JOBS pode ajudar a sua empresa a cumprir a Lei de cotas 8213/91">
-            <img class="img-fluid" alt="Logo PCD JOBS" width="150" height="60"
-                 src="PCDJOBS.png">
-        </a>
-        <button class="navbar-toggler text-bg-light no-contrast" data-bs-toggle="offcanvas" data-bs-target="#nav-sidebar"
-                aria-expanded="false" aria-label="Abrir menu de navegação">
-            <span class="visually-hidden">Navegação Principal do portal de vagas</span>
-            <span class="navbar-toggler-icon no-contrast"></span>
-        </button>
-        <div class="row d-none d-lg-flex">
-            <div class="col-lg-12 d-flex align-items-center">
-                <ul class="navbar-nav text-center text-uppercase">
-                    <li class="py-2 pe-2 d-flex align-items-center">
-                        <a class="text-uppercase text-light text-decoration-none "
-                           aria-label="Vagas" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                           title="Deficiente Online: Vagas de Emprego para Deficientes"
-                           href="vagas.html" rel="search">Vagas</a></li>
-                    <li class="p-2 d-flex align-items-center">
-                        <a class="text-uppercase text-light text-decoration-none "
-                           data-bs-toggle="tooltip" data-bs-placement="bottom" title="Clique aqui e faça seu cadastro"
-                           aria-label="Cursos - Clique aqui para conferir os cursos"
-                           href="Cursos/home.html" rel="stylesheet">Cursos</a></li>
-                    <li class="px-1 py-2 d-flex align-items-center">
-                        <a class="text-uppercase text-light text-decoration-none "
-                           aria-label="Leis e deficiência" data-bs-toggle="tooltip" data-bs-placement="bottom"
-                           title="Leis, Normas, Acessibilidade e Deficiência. Descubra como o Deficiente Online pode ajudar a sua empresa a cumprir a Lei de cotas 8213/91."
-                           href="https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/estatuto-da-pessoa-com-deficiencia">Leis e deficiência</a></li>
-                </ul>
-            </div>
-        </div>
-                    <div class="d-none d-lg-flex">
-                <a class="text-uppercase btn btn-lg text-light border-primary me-2" aria-label="Login" tabindex="0"
-                   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Clique aqui para entrar"
-                   href="Login.html" rel="nofollow"id="texto" onmouseover="responsiveVoice.speak('Botão de Login', 'Brazilian Portuguese Female')">Login</a>
-                <a class="text-uppercase text-truncate btn btn-lg bg-secondary text-light pl-2" aria-label="Cadastre-se gratuitamente" tabindex="0"
-                   data-bs-toggle="tooltip" data-bs-placement="bottom" title="Clique aqui para fazer seu cadastro"
-                   href="form.html" rel="nofollow"id="texto" onmouseover="responsiveVoice.speak('cadastre-se', 'Brazilian Portuguese Female')">Cadastre-se</a>
-            </div>
-            </div>
+</div>
+
+
+<nav class="navbar navbar-expand-lg border-bottom bg-transparent"
+aria-label="Barra de Navegação Principal">
+<div class="container d-flex justify-content-between">
+   <!-- Logo e link para a página principal -->
+   <a class="d-flex align-items-center" href="#" tabindex="0" data-bs-toggle="tooltip" data-bs-placement="bottom"
+      title="Leis, Normas, Acessibilidade e Deficiência. Descubra como o PCD JOBS pode ajudar a sua empresa a cumprir a Lei de cotas 8213/91">
+       <img class="img-fluid" alt="Logo PCD JOBS" width="150" height="60" src="PCDJOBS.png">
+   </a>
+
+   <!-- Botão para abrir o menu de navegação lateral (offcanvas) -->
+   <button class="navbar-toggler text-bg-light no-contrast" data-bs-toggle="offcanvas" data-bs-target="#nav-sidebar"
+           aria-expanded="false" aria-label="Abrir menu de navegação">
+       <span class="visually-hidden">Navegação Principal do portal de vagas</span>
+       <span class="navbar-toggler-icon no-contrast"></span>
+   </button>
+
+   <!-- Menu de navegação para dispositivos grandes -->
+   <div class="row d-none d-lg-flex">
+       <div class="col-lg-12 d-flex align-items-center">
+           <ul class="navbar-nav text-center text-uppercase">
+               <li class="py-2 pe-2 d-flex align-items-center">
+                   <a class="text-uppercase text-light text-decoration-none "
+                      aria-label="Vagas" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      title="Deficiente Online: Vagas de Emprego para Deficientes"
+                      href="vagas.html" rel="search">Vagas</a></li>
+               <li class="p-2 d-flex align-items-center">
+                   <a class="text-uppercase text-light text-decoration-none "
+                      data-bs-toggle="tooltip" data-bs-placement="bottom" title="Clique aqui e faça seu cadastro"
+                      aria-label="Cursos - Clique aqui para conferir os cursos"
+                      href="Cursos/home.html" rel="stylesheet">Cursos</a></li>
+               <li class="px-1 py-2 d-flex align-items-center">
+                   <a class="text-uppercase text-light text-decoration-none "
+                      aria-label="Leis e deficiência" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      title="Leis, Normas, Acessibilidade e Deficiência. Descubra como o Deficiente Online pode ajudar a sua empresa a cumprir a Lei de cotas 8213/91."
+                      href="https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/estatuto-da-pessoa-com-deficiencia">Leis e deficiência</a></li>
+           </ul>
+       </div>
+   </div>
+
+   <!-- Botões de Login e Cadastro para dispositivos grandes -->
+   <div class="d-none d-lg-flex">
+       <a class="text-uppercase btn btn-lg text-light border-primary me-2" aria-label="Login" tabindex="0"
+          data-bs-toggle="tooltip" data-bs-placement="bottom" title="Clique aqui para entrar"
+          href="Login.html" rel="nofollow" id="texto" onmouseover="responsiveVoice.speak('Botão de Login', 'Brazilian Portuguese Female')">Login</a>
+       <a class="text-uppercase text-truncate btn btn-lg bg-secondary text-light pl-2" aria-label="Cadastre-se gratuitamente" tabindex="0"
+          data-bs-toggle="tooltip" data-bs-placement="bottom" title="Clique aqui para fazer seu cadastro"
+          href="form.html" rel="nofollow" id="texto" onmouseover="responsiveVoice.speak('cadastre-se', 'Brazilian Portuguese Female')">Cadastre-se</a>
+   </div>
+</div>
 </nav>
 
+
+<!-- Menu offcanvas para navegação em dispositivos móveis -->
 <div class="offcanvas offcanvas-end d-flex d-lg-none" data-bs-scroll="true" data-bs-backdrop="true" tabindex="-1" id="nav-sidebar">
+    <!-- Cabeçalho do menu offcanvas -->
     <div class="offcanvas-header bg-transparent">
+        <!-- Logo e link de retorno à página inicial -->
         <a class="link-body-emphasis d-flex align-items-center me-md-auto text-decoration-none"
            href="http://127.0.0.1:5500/index.html" data-bs-toggle="tooltip" data-bs-placement="bottom"
            title="Leis, Normas, Acessibilidade e Deficiência. Descubra como o PCD Online pode ajudar a sua empresa a cumprir a Lei de cotas 8213/91">
             <img class="img-fluid" src="PCDJOBS.png" alt="Logo PCD JOBS" width="110" height="50">
         </a>
+        <!-- Botão para fechar o menu offcanvas -->
         <button class="btn-close" type="button" aria-label="Fechar" data-bs-dismiss="offcanvas" onclick="closeOffcanvasMenu()"></button>
     </div>
+    <!-- Corpo do menu offcanvas com navegação e opções -->
     <div class="offcanvas-body bg-dark">
+        <!-- Navegação principal dentro do menu offcanvas -->
         <nav aria-label="Barra de Navegação Principal">
             <ul class="list-unstyled text-center border-bottom">
-                                <li class="p-2">
+                <!-- Link para a página de vagas -->
+                <li class="p-2">
                     <a class="active text-uppercase text-decoration-none text-light fs-5" aria-label="Vagas" data-bs-toggle="tooltip" data-bs-placement="bottom"
                        title="Deficiente Online: Vagas de Emprego para Deficientes, são milhares de Vagas e Currículos de PCD no maior site de Empregos de pessoas com Deficiência do Brasil"
                        href="https://kanto.legiaodosherois.com.br/w750-h450-k1/wp-content/uploads/2022/05/legiao_ZCdS2xfPBpnA.png.webp" rel="search">Vagas</a></li>
+                <!-- Link para a página de cadastro de candidatos -->
                 <li class="pb-2">
                     <a class="active text-uppercase text-decoration-none text-light fs-5" aria-label="Candidato - Clique aqui para fazer seu cadastro"
                        data-bs-toggle="tooltip" data-bs-placement="bottom" title="Clique aqui e faça seu cadastro"
                        href="form.html" rel="nofollow">Candidato</a></li>
+                <!-- Link para a página de leis e deficiência -->
                 <li class="pb-2">
                     <a class="text-uppercase text-decoration-none text-light fs-5" aria-label="Leis e deficiência" data-bs-toggle="tooltip" data-bs-placement="bottom"
                        title="Leis, Normas, Acessibilidade e Deficiência. Descubra como o Deficiente Online pode ajudar a sua empresa a cumprir a Lei de cotas 8213/91."
                        href="https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/estatuto-da-pessoa-com-deficiencia">Leis e deficiência</a></li>
             </ul>
         </nav>
-                    <div class="text-center py-3">
-                <a class="btn btn-light btn-lg text-uppercase w-75" aria-label="Login" tabindex="0"
-                   data-bs-toggle="tooltip" data-bs-placement="top" title="Clique aqui para entrar"
-                   href="login.html" rel="nofollow">Login</a></div>
-            <div class="text-center py-3">
-                <a class="btn btn-secondary btn-lg text-uppercase w-75" aria-label="Cadastre-se gratuitamente" tabindex="0"
-                   data-bs-toggle="tooltip" data-bs-placement="top" title="Clique aqui para fazer seu cadastro"
-                   href="form.html" rel="nofollow">Cadastre-se</a></div>
-            </div>
-</div>  <div class="container py-3">
-</br>
-</br>
-
-        <div class="col-12">
-            <h1 class="text-light text-center text-uppercase" tabindex="0">
-                Faça sua pesquisa com
-                <span class="text-primary fw-bold">filtro</span>
-                avançado
-            </h1>
+        <!-- Botões de login e cadastro -->
+        <div class="text-center py-3">
+            <!-- Botão de login -->
+            <a class="btn btn-light btn-lg text-uppercase w-75" aria-label="Login" tabindex="0"
+               data-bs-toggle="tooltip" data-bs-placement="top" title="Clique aqui para entrar"
+               href="login.html" rel="nofollow">Login</a>
         </div>
-        <div class="d-flex justify-content-center">
+        <div class="text-center py-3">
+            <!-- Botão de cadastro -->
+            <a class="btn btn-secondary btn-lg text-uppercase w-75" aria-label="Cadastre-se gratuitamente" tabindex="0"
+               data-bs-toggle="tooltip" data-bs-placement="top" title="Clique aqui para fazer seu cadastro"
+               href="form.html" rel="nofollow">Cadastre-se</a>
+        </div>
+    </div>
+</div>
+
+<!-- Seção de pesquisa com filtro avançado -->
+<div class="container py-3">
+    <!-- Espaço para separação visual -->
+    </br></br>
+
+    <div class="col-12">
+        <!-- Título da seção de pesquisa -->
+        <h1 class="text-light text-center text-uppercase" tabindex="0">
+            Faça sua pesquisa com
+            <span class="text-primary fw-bold">filtro</span>
+            avançado
+        </h1>
+    </div>
+    <!-- Formulário de busca de vagas -->
+    <div class="d-flex justify-content-center">
         <div class="col-12 col-lg-8 pt-2">
             <form class="d-flex flex-wrap align-items-center" method="post">
                 <div class="input-group input-group-lg">
+                    <!-- Campo de entrada para busca -->
                     <input class="form-control" type="text" placeholder="Buscar por título ou palavras chaves"
                            id="input-search-jobs" aria-label="Busca aprimorada, cidade ou palavras chaves">
+                    <!-- Botão para enviar a busca -->
                     <button id="btn_buscar_vaga" class="btn btn-secondary" type="submit" aria-label="Buscar Vagas"
                             data-bs-toggle="tooltip" data-bs-placement="top" title="pesquisar"
                             onclick="searchJob(event)">
@@ -195,19 +268,17 @@
                 </div>
             </form>
         </div>    
-        </div>
-        <div class="col-12 text-center pb-2">
-            <sub class="text-light fs-6" tabindex="0">
-                *Nosso site é exclusivo para vagas e pessoas com deficiência abrangidos pela lei 8213/91.
-                <a class="text-uppercase text-light" href="https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/estatuto-da-pessoa-com-deficiencia" data-bs-toggle="tooltip" data-bs-placement="top"
-                   title="Clique aqui para saber mais">Saiba mais.</a>
-            </sub>
-        </div>
+    </div>
+    <div class="col-12 text-center pb-2">
+        <!-- Nota de exclusividade do site -->
+        <sub class="text-light fs-6" tabindex="0">
+            *Nosso site é exclusivo para vagas e pessoas com deficiência abrangidos pela lei 8213/91.
+            <a class="text-uppercase text-light" href="https://www.tjdft.jus.br/institucional/imprensa/campanhas-e-produtos/direito-facil/edicao-semanal/estatuto-da-pessoa-com-deficiencia" data-bs-toggle="tooltip" data-bs-placement="top"
+               title="Clique aqui para saber mais">Saiba mais.</a>
+        </sub>
     </div>
 </div>
-</br>
-</br>
-</br>
+
 </header>
     <main id="main">    
     <div class="container">
